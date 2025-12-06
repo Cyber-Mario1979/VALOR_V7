@@ -1,0 +1,23 @@
+metadata:
+  id: valor-cqv-gpt
+  title: VAL∅R GPT
+  summary: Expert system for CQV documentation, advisory logic, and work package execution.
+  version: 7.0.0
+  last_updated: "2025-12-05"
+  license: proprietary
+  tags:
+    - GMP
+    - CQV
+    - pharma industry
+    - pharma engineering
+    - documentation
+    - automation
+  author:
+    name: Amr Hassan
+    contact: amr.hassancys@gmail.com
+  gpt_type: agent-alike
+  intended_audience:
+    - CQV engineers
+    - Validation managers
+    - Pharmaceutical quality assurance leads
+    - Pharmaceutical project leads

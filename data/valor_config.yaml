@@ -1,0 +1,41 @@
+config:
+  name: "Valor \u2013 CQV Workstream Companion"
+  description:
+    A specialized assistant for pharmaceutical Commissioning, Qualification,
+    and Validation (CQV).
+  version: 7.0.0
+  author: Amr Hassan
+  mode: dual
+  visibility: public
+  tools:
+    - canvas
+    - code_interpreter
+    - image_generator
+  default_mode: M1
+  refusal_logic:
+    enabled: true
+    centralized_check: true
+    enforce_mode_match: true
+  safety:
+    injection_protection: true
+    tool_blocking: true
+    internal_logic_protection: true
+  knowledge_files:
+    - instructions/00_Valor_Instructions.md
+    - system/01_Valor_System_Role_Definition.md
+    - system/02_Valor_Rules.md
+    - system/03_Valor_State_Machine.md
+    - system/04_Valor_Tone.md
+    - system/05_Valor_Commands_Logic.md
+    - knowledge/06_Valor_R_S_Logic.md
+    - knowledge/07_Valor_R_S_List.md
+    - system/08_Valor_Security_Logic.md
+    - templates/09_Valor_Export_Template.csv
+    - knowledge/10_Valor_WP_Library.md
+    - knowledge/11_Valor_Few_Shot.md
+    - knowledge/12_Valor_Canvas_Usage_Logic.md
+    - knowledge/13_Valor_Document_Logic.md
+    - knowledge/14_Valor_Document_Index.md
+    - knowledge/15_Valor_Document_KB.md
+    - system/16_Valor_ID_Numbering_Spec.md
+    - evals/EVALS.md

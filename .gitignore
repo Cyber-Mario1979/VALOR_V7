@@ -1,0 +1,30 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Python / general interpreter caches
+__pycache__/
+*.py[cod]
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment files
+.env
+
+# Editor directories
+.idea/
+.vscode/
+
+# Node dependencies (if any)
+node_modules/
+
+# Swap files
+*.swp
+
+# Archives
+*.zip
+
+# Exported reports
+export.csv
