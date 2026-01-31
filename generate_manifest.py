@@ -34,12 +34,15 @@ def sha256_bytes(data: bytes) -> str:
 def main() -> int:
     root = Path(".").resolve()
     created_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    ignore_dirs = {".venv", "venv", "__pycache__", ".vscode", ".git"}
 
     entries = []
     for p in sorted(root.rglob("*")):
         if not p.is_file():
             continue
         rel = p.relative_to(root).as_posix()
+        if rel.split("/", 1)[0] in ignore_dirs:
+            continue
 
         # The manifest is the root of truth; we do not hash it inside itself.
         if rel == "manifest.yaml":

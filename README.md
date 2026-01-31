@@ -21,3 +21,17 @@ For a detailed list of every file, see `documentation/INDEX.md`.
 ## Usage
 
 Clone or download this repository, keep the directory structure intact and load it into the target environment that will host the Valor assistant.  The assistant is intended to operate as a CQV consultant, focusing on the Egypt site, and relies on the provided configuration and knowledge files to function correctly.
+
+## Manifest verification
+
+The repository includes a `manifest.yaml` that lists every file and its SHA‑256 hash. To regenerate the manifest after updates, run:
+
+```
+python generate_manifest.py
+```
+
+To verify the pack contents against the manifest, run:
+
+```
+python verify_manifest.py
+```
