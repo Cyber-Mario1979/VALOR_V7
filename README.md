@@ -1,3 +1,5 @@
+![VALOR V7 Header](assets/header.png)
+
 # Valor – Egypt Operations Site
 
 This repository hosts **Valor V7**, a CQV workstream assistant tailored for a multi‑national company’s Egypt operations site.  It packages the layered logic, state machines, work‑package engines, security overlays and export pipelines required to run the Valor assistant in production.
