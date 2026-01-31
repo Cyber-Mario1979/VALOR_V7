@@ -74,7 +74,7 @@ def main() -> int:
         else:
             ok_count += 1
 
-        manifest_paths = set(e.get("path") for e in files if e.get("path"))
+    manifest_paths = set(e.get("path") for e in files if e.get("path"))
     IGNORE_DIRS = {".venv", "venv", "__pycache__", ".vscode", ".git"}
 
     actual_paths = set()
